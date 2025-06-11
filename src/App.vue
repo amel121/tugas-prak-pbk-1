@@ -9,6 +9,8 @@ import HelloWorld from './components/HelloWorld.vue'
       <ul>
         <li><a href="#">Beranda</a></li>
         <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Galeri</a></li>
         <li><a href="#">Kontak</a></li>
       </ul>
     </nav>
@@ -34,11 +36,13 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 1rem;
   border-radius: 12px;
   margin-bottom: 2rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 0;
@@ -47,12 +51,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 .navbar a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .navbar a:hover {
   color: #42b883;
+  transform: scale(1.05);
 }
 </style>
