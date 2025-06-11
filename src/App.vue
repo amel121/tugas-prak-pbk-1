@@ -20,16 +20,16 @@ import HelloWorld from './components/HelloWorld.vue'
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms ease-in-out;
 }
 
-/* Efek hover untuk logo Vite */
+/* Efek hover glow untuk logo Vite */
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 10px #646cffaa);
 }
 
-/* Efek hover khusus untuk logo Vue */
+/* Efek hover glow untuk logo Vue */
 .logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 10px #42b883aa);
 }
 </style>
