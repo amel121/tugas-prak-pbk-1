@@ -5,11 +5,19 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://vitejs.dev/logo.svg"
+        class="logo"
+        alt="Vite Logo"
+      />
     </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://vuejs.org/images/logo.png"
+        class="logo vue"
+        alt="Vue Logo"
+      />
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
@@ -23,13 +31,13 @@ import HelloWorld from './components/HelloWorld.vue'
   transition: filter 300ms ease-in-out;
 }
 
-/* Efek hover glow untuk logo Vite */
+/* Logo Vite bersinar saat hover */
 .logo:hover {
-  filter: drop-shadow(0 0 10px #646cffaa);
+  filter: drop-shadow(0 0 12px #646cffaa);
 }
 
-/* Efek hover glow untuk logo Vue */
+/* Logo Vue bersinar saat hover */
 .logo.vue:hover {
-  filter: drop-shadow(0 0 10px #42b883aa);
+  filter: drop-shadow(0 0 12px #42b883aa);
 }
 </style>
