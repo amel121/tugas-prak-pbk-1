@@ -4,40 +4,55 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-      <img
-        src="https://vitejs.dev/logo.svg"
-        class="logo"
-        alt="Vite Logo"
-      />
-    </a>
-    <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">
-      <img
-        src="https://vuejs.org/images/logo.png"
-        class="logo vue"
-        alt="Vue Logo"
-      />
-    </a>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <HelloWorld msg="Selamat Datang di Aplikasi Vue!" />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms ease-in-out;
+/* Warna latar belakang dan teks */
+.container {
+  background-color: #1e1e2f;
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Logo Vite bersinar saat hover */
-.logo:hover {
-  filter: drop-shadow(0 0 12px #646cffaa);
+/* Navigasi */
+.navbar {
+  background-color: #29294d;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-/* Logo Vue bersinar saat hover */
-.logo.vue:hover {
-  filter: drop-shadow(0 0 12px #42b883aa);
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #42b883;
 }
 </style>
