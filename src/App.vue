@@ -5,6 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div class="container">
+    <!-- Logo Aplikasi -->
+    <div class="logo-container">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/3214/3214421.png"
+        alt="Logo Aplikasi"
+        class="app-logo"
+      />
+      <h1>Aplikasi Amelia Cantik</h1>
+    </div>
+
+    <!-- Navigasi -->
     <nav class="navbar">
       <ul>
         <li><a href="#">Beranda</a></li>
@@ -15,12 +26,13 @@ import HelloWorld from './components/HelloWorld.vue'
       </ul>
     </nav>
 
+    <!-- Konten Utama -->
     <HelloWorld msg="Selamat Datang di Aplikasi Vue!" />
   </div>
 </template>
 
 <style scoped>
-/* Warna latar belakang dan teks */
+/* Tampilan Umum */
 .container {
   background-color: #1e1e2f;
   color: #ffffff;
@@ -28,6 +40,25 @@ import HelloWorld from './components/HelloWorld.vue'
   padding: 2rem;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Logo Aplikasi */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  transition: transform 0.3s ease;
+}
+
+.app-logo:hover {
+  transform: rotate(10deg) scale(1.1);
 }
 
 /* Navigasi */
