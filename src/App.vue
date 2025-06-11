@@ -1,3 +1,4 @@
+<!-- App.vue -->
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
@@ -21,9 +22,13 @@ import HelloWorld from './components/HelloWorld.vue'
   will-change: filter;
   transition: filter 300ms;
 }
+
+/* Efek hover untuk logo Vite */
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
+/* Efek hover khusus untuk logo Vue */
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
